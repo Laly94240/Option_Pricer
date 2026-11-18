@@ -1,6 +1,12 @@
 #include "PutOption.h"
+#include <algorithm>
 
-optionType PutOption::getOptionType()
+double PutOption::payoff(double z)
+{
+	return std::max(_strike - z, 0.0);
+}
+
+optionType PutOption::getOptionType() const
 {
 	return Put;
 }

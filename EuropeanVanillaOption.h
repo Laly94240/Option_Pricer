@@ -1,13 +1,16 @@
 #pragma once
 #include "Option.h"
 
-enum optionType{Call,Put};
+enum optionType { Call, Put };
 
 class EuropeanVanillaOption : public Option
 {
+	friend class BlackScholesPricer;
+
 public:
 	EuropeanVanillaOption(double expiry, double strike);
-	virtual optionType getOptionType() = 0;
-private:
+	virtual optionType getOptionType() const = 0;
+
+protected:
 	double _strike;
 };

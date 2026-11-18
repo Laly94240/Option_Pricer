@@ -1,8 +1,10 @@
 #pragma once
 #include "EuropeanVanillaOption.h"
+
 class PutOption : public EuropeanVanillaOption
 {
-private:
-	optionType getOptionType() override;
+public:
+	using EuropeanVanillaOption::EuropeanVanillaOption;
+	double payoff(double z) override;
+	optionType getOptionType() const override;
 };
-
