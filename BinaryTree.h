@@ -7,10 +7,11 @@ template <typename T>
 class BinaryTree
 {
 private:
-	int _depth;
-	vector<vector<T>> _tree;
+	
 
 public:
+	int _depth;
+	vector<vector<T>> _tree;
 	void setDepth(int depth);
 	void setNode(int, int, T);
 	int getNode(int, int);
