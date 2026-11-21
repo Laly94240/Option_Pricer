@@ -30,6 +30,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="BlackScholesPricer.cpp">
     <ClCompile Include="BinaryTree.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
@@ -50,6 +51,7 @@
     <ClInclude Include="main.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="BlackScholesPricer.h">
     <ClInclude Include="BinaryTree.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
