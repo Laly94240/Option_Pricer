@@ -2,7 +2,12 @@
 #include <algorithm>
 using namespace std;
 
-optionType PutOption::getOptionType()
+double PutOption::payoff(double z)
+{
+	return max(_strike - z, 0.0);
+}
+
+optionType PutOption::getOptionType() const
 {
 	return Put;
 }
