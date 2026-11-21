@@ -9,8 +9,8 @@ class EuropeanVanillaOption : public Option
 
 public:
 	EuropeanVanillaOption(double expiry, double strike);
-	virtual optionType getOptionType() const = 0;
-
-protected:
+	virtual optionType getOptionType() = 0;
+	double getStrike() const;
+private:
 	double _strike;
 };

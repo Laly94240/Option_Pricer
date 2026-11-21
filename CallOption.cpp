@@ -1,5 +1,6 @@
 #include "CallOption.h"
-#include <algorithm> 
+#include <algorithm>
+using namespace std;
 
 double CallOption::payoff(double z)
 {
@@ -9,4 +10,11 @@ double CallOption::payoff(double z)
 optionType CallOption::getOptionType() const
 {
 	return Call;
+}
+
+CallOption::CallOption(double expiry, double strike) : EuropeanVanillaOption(expiry, strike) {}
+
+double CallOption::payoff(double spotPrice) const
+{
+	return max(spotPrice - getStrike(), 0.0);
 }

@@ -3,9 +3,9 @@
 
 class CallOption : public EuropeanVanillaOption
 {
-private :
-	using EuropeanVanillaOption::EuropeanVanillaOption;
-	double payoff(double z) override;
-	optionType getOptionType() const override;
+public:
+	CallOption(double expiry, double strike);
+	optionType getOptionType() override;
+	double payoff(double) const override;
 };
 
