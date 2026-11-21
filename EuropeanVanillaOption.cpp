@@ -12,3 +12,8 @@ EuropeanVanillaOption::EuropeanVanillaOption(double expiry, double strike) : Opt
         throw invalid_argument("Expiry and strike must be nonnegative");
     }
 }
+
+double EuropeanVanillaOption::getStrike() const 
+{ 
+    return _strike; 
+}

@@ -2,7 +2,10 @@
 #include "EuropeanVanillaOption.h"
 class PutOption : public EuropeanVanillaOption
 {
-private:
+public:
+	PutOption(double expiry, double strike);
 	optionType getOptionType() override;
+	double payoff(double) const override;
+
 };
 

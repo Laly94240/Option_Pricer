@@ -1,5 +1,6 @@
 #include "Option.h"
 #include <iostream>
+using namespace std;
 
 Option::Option(double expiry)
 {
