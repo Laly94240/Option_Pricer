@@ -2,17 +2,12 @@
 #include <algorithm>
 using namespace std;
 
-double PutOption::payoff(double z)
-{
-	return max(_strike - z, 0.0);
-}
+PutOption::PutOption(double expiry, double strike) : EuropeanVanillaOption(expiry, strike) {}
 
 optionType PutOption::getOptionType() const
 {
 	return Put;
 }
-
-PutOption::PutOption(double expiry, double strike) : EuropeanVanillaOption(expiry, strike) {}
 
 double PutOption::payoff(double spotPrice) const
 {

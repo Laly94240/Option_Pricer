@@ -4,7 +4,7 @@
 class PutOption : public EuropeanVanillaOption
 {
 public:
-	using EuropeanVanillaOption::EuropeanVanillaOption;
-	double payoff(double z) override;
+	PutOption(double expiry, double strike);
 	optionType getOptionType() const override;
+	double payoff(double) const override;
 };

@@ -2,17 +2,12 @@
 #include <algorithm>
 using namespace std;
 
-double CallOption::payoff(double z)
-{
-	return std::max(z - _strike, 0.0);
-}
+CallOption::CallOption(double expiry, double strike) : EuropeanVanillaOption(expiry, strike) {}
 
 optionType CallOption::getOptionType() const
 {
 	return Call;
 }
-
-CallOption::CallOption(double expiry, double strike) : EuropeanVanillaOption(expiry, strike) {}
 
 double CallOption::payoff(double spotPrice) const
 {

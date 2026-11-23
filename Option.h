@@ -4,11 +4,10 @@ class Option
 {
 public:
 	Option(double expiry);
+	virtual ~Option() = default;
 	//voir pour mettre const vu que ça modif pas l'attribut passée en paramètres
 	virtual double payoff(double) const = 0;
-private:
-	double _expiry;
-	double getExpiry();
+	double getExpiry() const;
 
 private:
 	double _expiry;

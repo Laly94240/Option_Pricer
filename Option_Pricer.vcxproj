@@ -124,7 +124,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BlackScholesPricer.cpp" />
-    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="CallOption.cpp" />
     <ClCompile Include="EuropeanVanillaOption.cpp" />
     <ClCompile Include="main.cpp" />

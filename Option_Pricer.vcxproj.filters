@@ -31,9 +31,6 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="BlackScholesPricer.cpp">
-    <ClCompile Include="BinaryTree.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Option.h">

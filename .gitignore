@@ -19,3 +19,5 @@ Release/
 *.recipe
 *.exe
 *.vcxproj.user
+
+.fake
