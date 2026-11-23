@@ -5,3 +5,17 @@
 /.vs/Option_Pricer
 /x64/Debug
 /Option_Pricer/x64/Debug
+
+.vs/
+x64/
+Debug/
+Release/
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+*.recipe
+*.exe
+*.vcxproj.user
