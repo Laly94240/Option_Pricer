@@ -5,24 +5,27 @@
 
 using namespace std;
 
-void BinaryTree<int>::setDepth(int depth)
+template <typename T>
+void BinaryTree<T>::setDepth(int depth)
 {
-	_depth = depth;
-	_tree.resize(depth + 1);
-	for (int i = 0; i <= depth; ++i)
-	{
-		_tree[i].resize(1 << i); // 2^i nodes at level i
-	}
+    _depth = depth;
+    _tree.resize(depth + 1);
+    for (int i = 0; i <= depth; ++i)
+    {
+        _tree[i].resize(1 << i); // 2^i nodes at level i
+    }
 }
 
-void BinaryTree<int>::setNode(int level, int index, int value)
+template <typename T>   
+void BinaryTree<T>::setNode(int level, int index, T value)
 {
-	_tree[level][index] = value;
+    _tree[level][index] = value;
 }
 
-int BinaryTree<int>::getNode(int level, int index)
+template <typename T>
+T BinaryTree<T>::getNode(int level, int index)
 {
-	return _tree[level][index];
+    return _tree[level][index];
 }
 
 
