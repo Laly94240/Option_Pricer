@@ -19,3 +19,5 @@ Release/
 *.recipe
 *.exe
 *.vcxproj.user
+.vs/Option_Pricer/v17/Browse.VC.db
+.vs/Option_Pricer/v17/DocumentLayout.json
